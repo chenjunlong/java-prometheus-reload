@@ -25,6 +25,8 @@ mvn assembly:assembly
 3.启动（和Prometheus部署在同一台机器）
 nohup java -Dprometheus.yml.path=/workspace/service/prometheus-2.3.2.linux-amd64/prometheus.yml -Dprometheus.port=9090 -Dport=9091  -jar java-prometheus-reload-jar-with-dependencies.jar &
 
--Dprometheus.yml.path= prometheus.yml文件地址
+```
+-Dprometheus.yml.path=prometheus.yml文件地址
 -Dprometheus.port=prometheus的端口号
 -Dport=java-prometheus-reload启动的端口号
+```
